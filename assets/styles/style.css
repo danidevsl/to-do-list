@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.completed {
+    color: #068f02;
+}
+
+li button {
+    background-color: #f44336;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #e53935;
+}
+
+.todo-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    max-width: 400px;
+    margin: 100px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o botão fixo de Portfólio */
+.portfolio-btn {
+    position: fixed; /* Fixar o botão na tela */
+    bottom: 10px;    /* Distância de 10px do fundo da tela */
+    right: 10px;     /* Distância de 10px da borda direita */
+    background-color: #3498db; /* Cor de fundo azul */
+    color: white;    /* Cor do texto */
+    padding: 10px 20px; /* Menor padding para diminuir o tamanho */
+    font-size: 14px;  /* Fonte menor para telas pequenas */
+    font-weight: bold; /* Negrito para destaque */
+    border-radius: 25px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    z-index: 9999;    /* Garante que o botão fique acima de outros elementos */
+    transition: background-color 0.3s, transform 0.1s ease; /* Transições suaves */
+  }
+  
+  /* Efeito de hover para o botão */
+  .portfolio-btn:hover {
+    background-color: #2980b9; /* Cor de fundo mais escura ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho no hover */
+  }
+  
+  /* Efeito ao clicar no botão */
+  .portfolio-btn:active {
+    transform: scale(0.98); /* Efeito de clique (diminui levemente o botão) */
+  }
+  
+  /* Ajustes responsivos para telas menores */
+  
+  /* Telas pequenas (tablets e celulares) */
+  @media (max-width: 768px) {
+    .portfolio-btn {
+      padding: 8px 16px;  /* Padding reduzido para telas pequenas */
+      font-size: 12px;     /* Fonte menor para telas pequenas */
+      bottom: 10px;        /* Mantém uma distância pequena do fundo */
+      right: 10px;         /* Distância ajustada da borda direita */
+    }
+  }
+  
+  /* Telas muito pequenas (celulares verticais) */
+  @media (max-width: 480px) {
+    .portfolio-btn {
+      padding: 6px 12px;  /* Menor padding para maximizar espaço */
+      font-size: 10px;     /* Fonte ainda menor */
+      bottom: 10px;        /* Distância muito próxima do fundo */
+      right: 10px;         /* Distância bem próxima da borda direita */
+    }
+  }
+  
