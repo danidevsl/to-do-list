@@ -18,5 +18,4 @@ Check out the live demo here: [To-Do List Demo](https://to-do-list-danilo-jorge.
 - **HTML**: For structuring the to-do list.
 - **CSS**: For styling the page and making it responsive.
 - **JavaScript**: For adding interactivity, such as task management.
-- **Font Awesome** *(optional)*: For icons (if used in the design).
 
